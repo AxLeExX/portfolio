@@ -1,0 +1,36 @@
+* { /* Resets everything so different browsers don't affect layout */
+  margin: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DCDCDC; /* Light gray */
+  /*color: #696969; /* Dark gray */
+  color: #000000;
+}
+
+h1 {
+  color: #DC143C; /* Crimson */
+  text-align: center;
+}
+
+h2 {
+  color: #1E90FF; /* Blue */
+}
+
+p {
+  margin: 10px 10px;
+}
+
+ul {
+  list-style-type: square;
+  margin: 10px 20px;
+}
+
+a {
+  /*color: #00FFFF; /* Cyan */
+  color: #0000CD; /* Blue */
+  margin: 0px;
+  /*text-decoration: none;*/
+}
