@@ -1,39 +1,59 @@
 * { /* Resets everything so different browsers don't affect layout */
-  margin: 10px;
+  margin: 10px 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #DCDCDC; /* Light gray */
-  /*color: #696969; /* Dark gray */
-  color: #000000; /* Black */
+  background-color: #333;
+  color: #00FF00;
 }
 
 h1 {
-  color: #DC143C; /* Crimson */
+  color: #00FF00;
+  margin-top: 60px;
   text-align: center;
   padding: 15px;
-  border: 10px double #DC143C;
+  border: 10px double #00FF00;
 }
 
 h2 {
-  color: #1E90FF; /* Blue */
+  color: #FFFFFF;
 }
 
-p {
-  margin: 10px 10px;
+.nav-bar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  float: left;
+  border-right: 1px solid #bbb;
 }
-
-ul {
-  list-style-type: square;
-  /* margin: 10px 20px; */
-  padding: 0px 10px;
+.nav-bar li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+.nav-bar li:last-child {
+  border-right: none;
+}
+.nav-bar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+.nav-bar li a:hover {
+  background-color: #111;
 }
 
 a {
-  /*color: #00FFFF; /* Cyan */
-  color: #0000CD; /* Blue */
-  margin: 0px;
-  /*text-decoration: none;*/
+  color: white;
 }
