@@ -1,59 +1,97 @@
 * { /* Resets everything so different browsers don't affect layout */
-  margin: 10px 0px;
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #333;
-  color: #00FF00;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .page {
+    background-color: #F09A9D;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-size: 20px;
+  }
 }
 
-h1 {
-  color: #00FF00;
-  margin-top: 60px;
-  text-align: center;
-  padding: 15px;
-  border: 10px double #00FF00;
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  .page {
+    background-color: #F09A9D;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-size: 20px;
+  }
 }
 
-h2 {
-  color: #FFFFFF;
+/* Desktop Styles */
+@media only screen and (min-width: 901px) {
+  .page {
+    background-color: #F09A9D;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-size: 35px;
+  }
+}
+
+.page {
+  background-color: #B0C4DE;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.menu {
+  padding: 5px;
+  font-size: 20px;
+  background-color: #708090;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .nav-bar {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #333;
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  float: left;
-  border-right: 1px solid #bbb;
-}
-.nav-bar li {
-  float: left;
-  border-right: 1px solid #bbb;
-}
-.nav-bar li:last-child {
-  border-right: none;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
 }
 .nav-bar a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0px 16px;
   text-decoration: none;
+  color: #FFFFFF;
 }
-.nav-bar li a:hover {
-  background-color: #111;
+.nav-bar a:hover {
+  color: #FFDAB9;
+}
+.home, .labs, .portfolio {
+  border: 2px solid #708090;
+}
+.current {
+  border: 2px solid #FF8C00;
 }
 
-a {
-  color: white;
+
+.page-title {
+  color: #4169E1;
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  border: 10px double #4169E1;
+  justify-content: space-around;
+}
+
+.content {
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4169E1;
+}
+
+ul {
+  margin: 5px 25px;
 }
